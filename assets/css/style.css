@@ -6,6 +6,17 @@ body {
     margin: 0;
 }
 
+:root {
+    /* Одинииця для виміру розмірів*/
+   /* --index: calc(1vw + 1vh); */
+
+    --index: 30px;
+
+    /* Трансформація*/
+    --transition: cubic-bezier(0.1, 0.7, 0, 1);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -61,8 +72,20 @@ span {
 */
 
 .header {
-    justify-content: space-between;
+    /*justify-content: space-between;
+    height: 90px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.241);
     height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -75,6 +98,10 @@ span {
 
 }
 .nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
 }
 
     
@@ -88,8 +115,18 @@ display: flex
     align-items: center;
     
 }
-.nav_item {
 
+.nav_item a{
+    
+}
+
+.nav_site {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: -180px;
+    top: 50%;
+    transform: translateY(100%);
 }
 
 .btn {
@@ -173,9 +210,9 @@ display: flex
 }
 
 
-/* feetback*/
+/* response*/
 
-.container-feetback {
+.container-response{
 
 }
 
@@ -184,7 +221,7 @@ display: flex
 }
 
 .comment-header {
-    
+
 }
 
 .comment-author {  
@@ -198,3 +235,128 @@ display: flex
 .comment-text {
 
 }
+
+/* Адаптивність */
+@media (max-width: 1199px) {
+    .nav_list {
+        gap: 15px;
+    }
+
+    .nav_item a {
+        font-size: 0.9rem;
+    }
+
+    .nav_site {
+        right: 120px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-btn {
+        margin: 0 auto;
+    }
+
+    .master-avatar {
+        margin: 0 auto 20px;
+    }
+}
+
+/* Location */
+
+.container {
+
+}
+.location-block {
+
+}
+
+.location-block h2 {
+margin-bottom: 36px;
+left: 176px;
+}
+
+.location-block p {
+    margin-bottom: 36px;
+}
+
+iframe {
+    width: 60vw;
+    height: 40vh;
+}
+
+/* video */
+
+.container-video {
+background-color: #F2F2F2;
+}
+
+.video-block {
+
+}
+
+.video-block p{
+    margin-bottom: 36px;
+}
+.video-block h1{
+    margin-bottom: 36px;
+    max-width: 330px;
+}
+
+.video-block video{
+    border-radius: 10px;
+}
+
+/* other masters*/
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    /* забороняємо скролл */
+    overflow: hidden;
+}
+
+.items {
+    display: flex;
+    gap: 0.4rem;
+    /*Додаємо перспективу для контейнеру обгортки, щоб всередині нього працювала трансформація по Z осі */
+    perspective: calc(var(--index) * 35 );
+}
+
+.item {
+    width: 200px; 
+    height: 300px; 
+    cursor: pointer;
+    border: 1px solid #ccc; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ /*вказуємо в якому порядку і в який час буде трансформація */
+ /*transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+ will-change: transform, filter, rotateY, width; */
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item style{
+    width: 150px; 
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; 
+}
+
+
+
