@@ -18,45 +18,39 @@
 
                 <div class="nav">
                     <ul class="nav_list">
-                        <li class="nav_item">
-                            <a href="#">Майстри</a>
+                        <li class="nav_item"><a href="#">Майстри</a></li>
+                        <li class="nav_item"><a href="#">Послуги</a></li>
+                        <li class="nav_item"><a href="#">Салони краси</a></li>
+                        <li class="nav_item"><a href="#">Про сервіс</a></li>
+                        <li class="nav_item"><a href="#">Контакти та Зворотній зв'язок</a></li>
+                    
+                        <!-- Іконки -->
+                        <li class="nav_icons">
+                            <ul class="nav_site">
+                                <li class="nav_img"><a href="#"><img src="/assets/img/data.png" alt="data"></a></li>
+                                <li class="nav_img"><a href="#"><img src="/assets/img/massage.png" alt="message"></a></li>
+                                <li class="nav_img"><a href="#"><img src="/assets/img/Setting.png" alt="settings"></a></li>
+                                <li class="nav_img"><a href="#"><img src="/assets/img/profile.png" alt="profile"></a></li>
+                            </ul>
                         </li>
+                    
+                        <!-- Кнопка -->
                         <li class="nav_item">
-                            <a href="#">Послуги</a>
+                            <div class="btn">Додати запис</div>
                         </li>
-                        <li class="nav_item">
-                            <a href="#">Салони краси</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#">Про сервіс</a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#">Контакти та Зворотній зв'язок</a>
-                        </li>
-
-                        <ul class="nav_site">
-                            <li class="nav_img"><a href="#"><img src="/assets/img/profile.png"></a></li>
-                            <li class="nav_img"><a href="#"><img src="/assets/img/data.png"></a></li>
-                            <li class="nav_img"><a href="#"><img src="/assets/img/massage.png"></a></li>
-                            <li class="nav_img"><a href="#"><img src="/assets/img/Setting.png"></a></li>
-                        </ul>
-
-                        <div class="btn">Додати запис</div>
-                        
                     </ul>
                 </div>
             </div>
-        </div>
-          
-            
+        </div>     
+    </div>
+
+        <section class="about">
             <div class="master-info">
                 <div class="master-avatar">
                     <!--аватар майстра -->
                     <img src="/assets/img/photo.png" alt="Володимир К.">
                 </div>
             </div>
-    </div>
-        <section class="about">
             <div class="container-left">
                 <h2 class="about-title">
                     Володимир К. <span>Масажист</span>
@@ -84,6 +78,7 @@
                   <div class="comment-rating">
                     <span>😍</span>
                     <span>4.9</span>
+                    <div class="btn-rating"></div>
                   </div>
                   <p class="comment-text">
                     Lorem ipsum dolor sit amet.
@@ -180,31 +175,83 @@
             </div>
         </section>
 <!--other masters-->
-        <section>
-            <div class="container-masters">
-                <div class="master-block">
-                    <h2><span>Інші майстри</span> м.Кременчук</h2>
-                </div>
-            </div>
-            <div class="wrapper">
-                <div class="items">
-                    <div class="item"  tabindex="0" style="background-image: url(./assets/img/master1.png);">
-                       <!--<h3>Віталіна Станіславівна</h3>
-                        <p>Барбер</p>
-                        <div class="rating">
-                            <span>😊 4.9</span>
-                            <span>37 відгуків</span>--> 
-                    </div>
-                    <div class="item"  tabindex="0" style="background-image: url(./assets/img/master2.png);"></div>
-                    <div class="item"  tabindex="0" style="background-image: url(./assets/img/master3.png);"></div>
-                    <div class="item"  tabindex="0" style="background-image: url(./assets/img/master4.png);"></div>
-                    <div class="item"  tabindex="0" style="background-image: url(./assets/img/master5.png);"></div>
-                    <div class="item"  tabindex="0" style="background-image: url(./assets/img/master6.png);"></div>
-                </div>
-            </div> 
-            
-            
-        </section>
-        <!---->
+<section class="other-masters">
+  <div class="container-masters">
+      <div class="master-block">
+          <h2><span>Інші майстри</span> м.Кременчук</h2>
+      </div>
+  </div>
+  <div class="wrapper">
+      <div class="items">
+          <div class="item" tabindex="0">
+              <div class="item-photo" style="background-image: url(./assets/img/master1.png);"></div>
+              <div class="item-details">
+                  <h3>Віталіна Станіславівна</h3>
+                  <p>Барбер</p>
+                  <div class="rating">
+                      <span>😊 4.9</span>
+                      <span>37 відгуків</span>
+                  </div>
+              </div>
+          </div>
+          <div class="item" tabindex="0">
+              <div class="item-photo" style="background-image: url(./assets/img/master2.png);"></div>
+              <div class="item-details">
+                  <h3>Віталій Станіславович</h3>
+                  <p>Барбер</p>
+                  <div class="rating">
+                      <span>😊 4.9</span>
+                      <span>37 відгуків</span>
+                  </div>
+              </div>
+          </div>
+          <div class="item" tabindex="0">
+              <div class="item-photo" style="background-image: url(./assets/img/master3.png);"></div>
+              <div class="item-details">
+                  <h3>Віра Станіславівна</h3>
+                  <p>Барбер</p>
+                  <div class="rating">
+                      <span>😊 4.9</span>
+                      <span>37 відгуків</span>
+                  </div>
+              </div>
+          </div>
+          <div class="item" tabindex="0">
+              <div class="item-photo" style="background-image: url(./assets/img/master4.png);"></div>
+              <div class="item-details">
+                  <h3>Віктор Станіславович</h3>
+                  <p>Барбер</p>
+                  <div class="rating">
+                      <span>😊 4.9</span>
+                      <span>37 відгуків</span>
+                  </div>
+              </div>
+          </div>
+          <div class="item" tabindex="0">
+              <div class="item-photo" style="background-image: url(./assets/img/master5.png);"></div>
+              <div class="item-details">
+                  <h3>Валерія Станіславівна</h3>
+                  <p>Барбер</p>
+                  <div class="rating">
+                      <span>😊 4.9</span>
+                      <span>37 відгуків</span>
+                  </div>
+              </div>
+          </div>
+          <div class="item" tabindex="0">
+              <div class="item-photo" style="background-image: url(./assets/img/master6.png);"></div>
+              <div class="item-details">
+                  <h3>Вадим Станіславович</h3>
+                  <p>Барбер</p>
+                  <div class="rating">
+                      <span>😊 4.9</span>
+                      <span>37 відгуків</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>       
+ <!---->
 </body>
 </html>
