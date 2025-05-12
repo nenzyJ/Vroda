@@ -130,7 +130,7 @@ span {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.241);
+    background-color: rgba(255, 255, 255, 0.538);
     height: 85px;
     display: flex;
     /*justify-content: space-between; */
@@ -166,12 +166,16 @@ span {
     display: flex;
     gap: 22px;
     align-items: center;
+     transform: translateX(-40%);
 
     
 }
 
 .nav_item a{
-
+text-decoration: none;
+font-family: 'Raleway', sans-serif;
+color: black;
+font-size: 15px;
 }
 
 .nav_site {
@@ -195,7 +199,7 @@ span {
 
 
 
-.btn {
+.custom-btn {
     color: white;
     display: flex;
     justify-content: center;
@@ -273,6 +277,7 @@ span {
     color: #444;
    /* max-width: 600px; */
     margin-left: auto;
+    margin-top: auto;
     
 }
 
@@ -303,18 +308,6 @@ span {
 
 
 .contact-btn {
-   /* color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 167px;
-    height: 56px;
-    border-radius: 10px;
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
-    margin-top: 0; */
-
     color: white;
     display: flex;
     justify-content: center;
@@ -322,12 +315,16 @@ span {
     background-color: black;
     width: 167px;
     height: 56px;
-    border-radius: 10px;
-    transition: all 0.4s ease-in-out;
+    border-radius: 15px;
+    /*transition: all 0.4s ease-in-out;*/
     cursor: pointer;
     margin-top: 0;
-}
 
+    
+
+
+  
+}
 
 /* response*/
 
@@ -423,7 +420,9 @@ opacity: 0.3;
 margin-bottom: 30px;
 }
 .location-block {
-    padding: 40px 0;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .location-block h2 {
@@ -440,7 +439,17 @@ font-size: 48px;
 iframe {
     width: 76vw;
     height: 40vh;
+    border: none;
+    margin: 0;
+    padding: 0;
     
+}
+
+#location-map{
+    max-width: 100%; /* Не може бути ширше контейнера */
+    height: 400px; /* Фіксована висота */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тінь */
+    margin-top: 20px;
 }
 
 /* video */
@@ -580,5 +589,59 @@ iframe {
     }
 }
 
+/* advertising */
+.py-5 {
+    max-width: 1200px;
+max-height: 402px;
+margin: 150px;
+}
+.container {
+}
+.row {
+}
+.text-center {
+}
+.text-md-start {
+}
+.align-items-center {
+}
+.col-md-4 {
 
+}
+.mb-4 {
+}
+.mb-md-0 {
+}
+
+.fw-bold h2{
+    max-width: 400px;
+    margin: 0;  
+}
+
+
+.d-flex {
+}
+.flex-column {
+}
+.justify-content-center {
+}
+.align-items-md-start {
+}
+.mb-3 {
+}
+.btn {
+}
+.btn-dark {
+    width: 311px;
+    height: 56px;
+}
+.img-fluid {
+}
+
+/*footer */
+ footer{
+    padding: 200px;
+    background: linear-gradient(to right,  #ced9ff 0%,#e2fcff 100%);
+
+ }
 
