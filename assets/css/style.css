@@ -555,6 +555,8 @@ iframe {
 .item-details p {
     font-size: 0.9rem;
     margin-bottom: 5px;
+    border: ;
+    border-radius: 15px;
 }
 
 .rating {
@@ -587,6 +589,11 @@ iframe {
         width: 100px;
         height: 100px;
     }
+}
+
+.btn-barber{
+    
+
 }
 
 /* advertising */
