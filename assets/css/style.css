@@ -278,6 +278,8 @@ font-size: 15px;
    /* max-width: 600px; */
     margin-left: auto;
     margin-top: auto;
+    display: flex;
+    gap: 36px;
     
 }
 
@@ -297,10 +299,11 @@ font-size: 15px;
 
 .about-right h4 {
     color: #444;
-    max-width: 600px;
+    max-width: 800px;
     margin-top: 50px;
     top: -225px;
     position: relative;
+    transform: translateX(28%);
     
 
 }
@@ -319,6 +322,8 @@ font-size: 15px;
     /*transition: all 0.4s ease-in-out;*/
     cursor: pointer;
     margin-top: 0;
+    transform: translateX(-365%);
+    
 
     
 
