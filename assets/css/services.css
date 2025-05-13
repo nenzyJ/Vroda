@@ -436,6 +436,27 @@ span {
     background-color: #f5f5f5;
 }
 
+/*cards */
+
+.other-masters {
+    padding: 40px 0;
+}
+
+.container-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.services-items {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+
+}
+
 
 /* response*/
 
@@ -660,8 +681,8 @@ iframe {
     height: 150px;
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .item-details {
