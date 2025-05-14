@@ -9,7 +9,7 @@
           integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header" style="display: none;"> 
     <div class="container-fluid px-0 ">
         <div class="header-content">
             <div class="header-nav nav-left">
@@ -62,11 +62,11 @@
                 <img src="./assets/img/photo.png" alt="Володимир К.">
             </div>
             <div class="master-actions">
-                <button class="master-actions__btn profile-actions__btn--share">
+                <button class="master-actions__btn profile-actions__btn--share d-none d-lg-inline-block">
                     <img src="./assets/img/data.png" alt="data">
                 </button>
 
-                <button class="master-actions__btn profile-actions__btn--message">
+                <button class="master-actions__btn profile-actions__btn--message d-none d-lg-inline-block">
                     <img src="./assets/img/data.png" alt="data">
                 </button>
             </div>
@@ -78,31 +78,31 @@
 
 <!--about-->
 <section class="about">
-    <div class="container about-content">
-        <div class="about-left">
-            <h2 class="about-title">
-                Володимир К. <span>Масажист</span>
-            </h2>
-            <h4 class="about-location">
-                <img src="./assets/img/LOCATION.png">
+        <div class="container about-content d-flex flex-column flex-lg-row">
+            <div class="about-left order-1 order-lg-1">
+                <h2 class="about-title">
+                    Володимир К. <span>Масажист</span>
+                </h2>
+                <h4 class="about-location">
+                <img src="./assets/img/LOCATION.png" alt="">
                 <span>Кременчук, Крюківський</span></h4>
-        </div>
-        <div class="about-right">
-            <h4 class="about-description">👋 Привіт!
-                Я - Володимир. Кажуть, що я дивовижний масажист. Не вірите - замовте одну з моїх послуг. Це короткий
-                текст про майстра, який можна в декстоп версії не розгорнути.</h4>
-            <div class="about-actions">
-                <button class="about-actions__btn about-actions__btn--write">
-                    Написати мені
-                </button>
+            </div>
+            <div class="about-right order-2 order-lg-2">
+                <h4 class="about-description">👋 Привіт!
+                    Я - Володимир. Кажуть, що я дивовижний масажист. Не вірите - замовте одну з моїх послуг. Це короткий
+                    текст про майстра, який можна в декстоп версії не розгорнути.</h4>
+                <div class="about-actions">
+                    <button class="about-actions__btn about-actions__btn--write">
+                        Написати мені
+                    </button>
 
-                <button class="about-actions__btn about-actions__btn--call">
-                    <img src="./assets/img/data.png" alt="data">
-                </button>
+                    <button class="about-actions__btn about-actions__btn--call">
+                        <img src="./assets/img/data.png" alt="data">
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+  </section>
 <div class="services-reviews-tabs mt-4">
     <div class="tabs-container">
         <a href="#" class="tab active">Послуги</a>
@@ -379,23 +379,25 @@
 </div>
 <!--location-->
 <div class="container">
-    <div class="location-block">
-        <h2>Місцезнаходження</h2>
-        <div class="line"></div>
-        <p>
-            <img src="./assets/img/Location2.png" alt="">
-            Кременчук, Крюківський
-        </p>
-        <iframe id="location-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83678.88066812145!2d33.37574245735976!3d49.04928866914351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d75351789cd13b%3A0x779fe869156a36aa!2z0JrRgNGO0LrQvtCy0YHQutC40Lkg0YDQsNC50L7QvSwg0JrRgNC10LzQtdC90YfRg9CzLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzk2MDA!5e0!3m2!1sru!2sua!4v1746736427880!5m2!1sru!2sua"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div class="fs-3 fs-md-2 mb-3 text-center text-md-start">
+            <h2 class="location-title mb-3">Місцезнаходження</h2>
+            <div class="line"></div>
+            <p>
+                <img src="./assets/img/Location2.png" alt="">
+                Кременчук, Крюківський
+            </p>
+            <div class="map-container">
+                <iframe id="location-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83678.88066812145!2d33.37574245735976!3d49.04928866914351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d75351789cd13b%3A0x779fe869156a36aa!2z0JrRgNGO0LrQvtCy0YHQutC40Lkg0YDQsNC50L7QvSwg0JrRgNC10LzQtdC90YfRg9CzLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzk2MDA!5e0!3m2!1sru!2sua!4v1746736427880!5m2!1sru!2sua"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
     </div>
-</div>
 
 <!--video-->
-<section class="video">
+<section class="video" style="display: none;">
     <div class="container-video">
         <div class="video-block">
             <h1>Швидкий пошук майстрів та салонів краси в Києві, Львові, Дніпрі, по Україні</h1>
@@ -409,7 +411,7 @@
     </div>
 </section>
 <!--other masters-->
-<section class="other-masters py-5">
+<section class="other-masters py-5" style="display: none;">
     <div class="container-masters">
         <div class="master-block">
             <h2 class="display-4 mb-4"><span>Інші майстри</span> м.Кременчук</h2>

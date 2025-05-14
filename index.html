@@ -9,7 +9,7 @@
           integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
-<header class="main-header" style="display: none">
+<header class="main-header" style="display: none;">
     <div class="container-fluid">
         <div class="header-content">
             <div class="header-nav nav-left">
@@ -23,6 +23,7 @@
                     <li class="header-nav__item"><a href="#">Про сервіс</a></li>
                     <li class="header-nav__item"><a href="#">Контакти та Зворотній зв'язок</a></li>
                 </ul>
+                
             </div>
             <div class="nav-right">
                 <!-- Icons -->
@@ -48,7 +49,7 @@
         </div>
     </div>
 </header>
-    <div class="welcome" style="background-image: url('./assets/img/back-ground.png');">
+    <div class="welcome" style="background-image: url('./assets/img/back-ground.png')">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb" style="background-color:  rgba(255, 255, 255, 0.538);">
@@ -57,20 +58,34 @@
                     <li class="breadcrumb-item active" aria-current="page" style="color: #ED4457;">Тайський масаж</li>
                 </ol>
             </nav>
-            <div class="master-info">
+
+            <div class="master-info ">
                 <div class="master-avatar">
                     <img src="./assets/img/photo.png" alt="Володимир К.">
                 </div>
                 <div class="master-actions">
-                    <button class="master-actions__btn profile-actions__btn--share">
+                    <button class="master-actions__btn profile-actions__btn--share d-none d-lg-inline-block">
                         <img src="./assets/img/data.png" alt="data">
                     </button>
 
-                    <button class="master-actions__btn profile-actions__btn--message">
+                    <button class="master-actions__btn profile-actions__btn--message d-none d-lg-inline-block">
                         <img src="./assets/img/data.png" alt="data">
                     </button>
                 </div>
             </div>
+        </div>
+        <div class="bottom-line d-flex justify-content-between align-items-center d-lg-none px-3 py-2" >
+            <div class="bottom-line__avatars d-flex">
+                <img src="./assets/img/line1.png" alt="avatar" class="rounded-circle me-2" width="32" height="32">
+                <img src="./assets/img/line2.png"alt="avatar" class="rounded-circle me-2" width="32" height="32">
+                <img src="./assets/img/line3.png"alt="avatar" class="rounded-circle me-2" width="32" height="32">
+              </div>
+              <div class="bottom-line__rating d-flex align-items-center">
+                <span style="font-size: 1.2rem;">😍</span>
+                <span class="ms-1 fw-bold">4.9</span>
+              </div>
+            </div>
+
         </div>
         <div class="bottom-line"></div>
     </div>
@@ -78,8 +93,8 @@
 
     <!--about-->
     <section class="about">
-        <div class="container about-content">
-            <div class="about-left">
+        <div class="container about-content d-flex flex-column flex-lg-row">
+            <div class="about-left order-1 order-lg-1">
                 <h2 class="about-title">
                     Володимир К. <span>Масажист</span>
                 </h2>
@@ -87,7 +102,7 @@
                 <img src="./assets/img/LOCATION.png" alt="">
                 <span>Кременчук, Крюківський</span></h4>
             </div>
-            <div class="about-right">
+            <div class="about-right order-2 order-lg-2">
                 <h4 class="about-description">👋 Привіт!
                     Я - Володимир. Кажуть, що я дивовижний масажист. Не вірите - замовте одну з моїх послуг. Це короткий
                     текст про майстра, який можна в декстоп версії не розгорнути.</h4>
@@ -103,112 +118,114 @@
             </div>
         </div>
     </section>
-    <div class="services-reviews-tabs mt-4" style="display: none">
+    <div class="services-reviews-tabs mt-4">
         <div class="tabs-container">
             <a href="#" class="tab active">Послуги</a>
             <a href="#" class="tab">Відгуки</a>
         </div>
         <!-- response-->
-        <section class="response">
-            <div class="comment-block">
-                <div class="comment-left">
-                    <img src="./assets/img/Вікторія М.png" alt="avatar" class="comment-avatar">
-                    <div>
-                        <h3 class="comment-author">Вікторія М.</h3>
-                        <p class="comment-role">Візажист</p>
-                    </div>
+        <div class="container py-4">
+            <div class="row border-bottom pb-3 mb-3 align-items-start">
+                
+            <div class="col-md-3 d-flex align-items-center">
+                <img src="./assets/img/Вікторія М.png" alt="Avatar" class="avatar me-3" width="42" height="42">
+                <div>
+                    <p class="mb-1 fw-bold">Вікторія М.</p>
+                    <p class="mb-0 text-muted">Візажист</p>
                 </div>
-                <div class="comment-right">
-                    <div class="comment-rating">
-                        <span></span>
-                        <span></span>
-                        <div class="btn-rating">😍 4.9</div>
-                    </div>
-                    <p class="comment-text">
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                    <p class="comment-time">СЬОГОДНІ, 14:50</p>
                 </div>
-            </div>
 
-            <div class="comment-block">
-                <div class="comment-left">
-                    <img src="./assets/img/Вікторія М.png" alt="avatar" class="comment-avatar">
-                    <div>
-                        <h3 class="comment-author">Вікторія М.</h3>
-                        <p class="comment-role">Візажист</p>
-                    </div>
-                </div>
-                <div class="comment-right">
-                    <div class="comment-rating">
-                        <span></span>
-                        <span></span>
-                        <div class="btn-rating">😍 4.9</div>
-                    </div>
-                    <p class="comment-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonumy eirmod tempor.
-                    </p>
-                    <p class="comment-time">СЬОГОДНІ, 14:50</p>
+            
+                <div class="col-md-9">
+                <div class="fw-bold mb-2"> 4.9</div>
+                <p class="mb-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
+                </p>
                 </div>
             </div>
+        </div>
+            <div class="container py-4">
+            <div class="row border-bottom pb-3 mb-3 align-items-start">
+    
+            <div class="col-md-3 d-flex align-items-center">
+                <img src="./assets/img/Вікторія М.png" alt="Avatar" class="avatar me-3" width="42" height="42">
+                <div>
+                    <p class="mb-1 fw-bold">Вікторія М.</p>
+                    <p class="mb-0 text-muted">Візажист</p>
+                </div>
+                </div>
 
-            <div class="comment-block">
-                <div class="comment-left">
-                    <img src="./assets/img/Вікторія М.png" alt="avatar" class="comment-avatar">
-                    <div>
-                        <h3 class="comment-author">Вікторія М.</h3>
-                        <p class="comment-role">Візажист</p>
-                    </div>
-                </div>
-                <div class="comment-right">
-                    <div class="comment-rating">
-                        <span></span>
-                        <span></span>
-                        <div class="btn-rating">😍 4.9</div>
-                    </div>
-                    <p class="comment-text">
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                    <p class="comment-time">СЬОГОДНІ, 14:50</p>
+                
+                <div class="col-md-9">
+                <div class="fw-bold mb-2"> 4.9</div>
+                <p class="mb-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
+                </p>
                 </div>
             </div>
+        </div>
 
-            <div class="comment-block">
-                <div class="comment-left">
-                    <img src="./assets/img/Вікторія М.png" alt="avatar" class="comment-avatar">
-                    <div>
-                        <h3 class="comment-author">Вікторія М.</h3>
-                        <p class="comment-role">Візажист</p>
-                    </div>
+
+            <div class="container py-4">
+            <div class="row border-bottom pb-3 mb-3 align-items-start">
+        
+            <div class="col-md-3 d-flex align-items-center">
+                <img src="./assets/img/Вікторія М.png" alt="Avatar" class="avatar me-3" width="42" height="42">
+                <div>
+                    <p class="mb-1 fw-bold">Вікторія М.</p>
+                    <p class="mb-0 text-muted">Візажист</p>
                 </div>
-                <div class="comment-right">
-                    <div class="comment-rating">
-                        <span></span>
-                        <span></span>
-                        <div class="btn-rating">😍 4.9</div>
-                    </div>
-                    <p class="comment-text">
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                    <p class="comment-time">СЬОГОДНІ, 14:50</p>
+                </div>
+
+                <!-- Right part: Rating + Review -->
+                <div class="col-md-9">
+                <div class="fw-bold mb-2"> 4.9</div>
+                <p class="mb-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
+                </p>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+
+
+            <div class="container py-4">
+            <div class="row border-bottom pb-3 mb-3 align-items-start">
+                
+            <div class="col-md-3 d-flex align-items-center">
+                <img src="./assets/img/Вікторія М.png" alt="Avatar" class="avatar me-3" width="42" height="42">
+                <div>
+                    <p class="mb-1 fw-bold">Вікторія М.</p>
+                    <p class="mb-0 text-muted">Візажист</p>
+                </div>
+                </div>
+
+                
+                <div class="col-md-9">
+                <div class="fw-bold mb-2"> 4.9</div>
+                <p class="mb-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
+                </p>
+                </div>
+            </div>
+        </div>
+
+        
     <!--location-->
-    <div class="container" style="display: none">
-        <div class="location-block">
-            <h2>Місцезнаходження</h2>
+    <div class="container">
+        <div class="fs-3 fs-md-2 mb-3 text-center text-md-start">
+            <h2 class="location-title mb-3">Місцезнаходження</h2>
             <div class="line"></div>
             <p>
-                        <img src="./assets/img/Location2.png" alt="">
-                        Кременчук, Крюківський
-                        </p>
-            <iframe id="location-map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83678.88066812145!2d33.37574245735976!3d49.04928866914351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d75351789cd13b%3A0x779fe869156a36aa!2z0JrRgNGO0LrQvtCy0YHQutC40Lkg0YDQsNC50L7QvSwg0JrRgNC10LzQtdC90YfRg9CzLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzk2MDA!5e0!3m2!1sru!2sua!4v1746736427880!5m2!1sru!2sua"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+                <img src="./assets/img/Location2.png" alt="">
+                Кременчук, Крюківський
+            </p>
+            <div class="map-container">
+                <iframe id="location-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83678.88066812145!2d33.37574245735976!3d49.04928866914351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d75351789cd13b%3A0x779fe869156a36aa!2z0JrRgNGO0LrQvtCy0YHQutC40Lkg0YDQsNC50L7QvSwg0JrRgNC10LzQtdC90YfRg9CzLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzk2MDA!5e0!3m2!1sru!2sua!4v1746736427880!5m2!1sru!2sua"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
     </div>
 
@@ -339,7 +356,7 @@
             crossorigin="anonymous"></script>
 </body>
 <footer>
-    <div class="container">
+    <div class="container" style="display: none;">
         <div class="row  text-md-start align-items-center">
             <!-- Footer content -->
         </div>
