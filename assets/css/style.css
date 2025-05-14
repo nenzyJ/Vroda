@@ -64,9 +64,8 @@ span {
 
 
 .welcome {
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
     background-position: center bottom;
     min-height: 400px;
     position: relative;
