@@ -100,7 +100,23 @@ span {
     opacity: 0.7;
 }
 
+@media (max-width: 768px) {
+    .welcome {
+        min-height: 300px;
+        padding-top: 70px;
+    }
 
+    .master-info {
+        margin-bottom: 60px;
+    }
+
+    .welcome .bottom-line {
+        padding: 10px 20px;
+        height: auto;
+        min-height: 86px;
+        margin-top: -40px;
+    }
+}
 
 .master-avatar {
     width: 267.43218994140625px;
@@ -119,6 +135,16 @@ span {
     width: 100%;
     object-fit: cover;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+    .master-avatar {
+        width: 104px;
+        height: 104px;
+        top: 30px;
+        border: 2px solid rgba(255, 255, 255, 0.25);
+        margin-top: 30px;
+    }
 }
 
 .master-info {
@@ -406,8 +432,10 @@ span {
 
 
 
+@media (max-width: 991.98px) {}
+    .bottom-line{
 
-
+    }
 
 
 
@@ -556,7 +584,16 @@ span {
 }
 
 /*cards */
-
+.items {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    margin: 0 -20px;
+    padding: 0 20px;
+    -webkit-overflow-scrolling: touch;
+}
 
 .items::-webkit-scrollbar {
     display: none;
@@ -617,7 +654,10 @@ span {
     display: flex;
     align-items: center;
     gap: 4px;
+    
 }
+
+
 
 .rating-reviews {
     color: #666;
@@ -1291,4 +1331,5 @@ line-height: 78px; /* 139.286% */
         gap: 16px;
     }
 
+    
    
