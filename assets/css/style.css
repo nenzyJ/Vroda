@@ -910,6 +910,7 @@ iframe {
 .item:hover {
     transform: translateY(-8px);
     box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+    background: var(--silver-60, #F2F2F2);
 }
 
 .item-photo {
@@ -946,8 +947,8 @@ iframe {
     transition: color 0.3s ease;
 }
 
-.item:hover .item-details h3 {
-    color: #ED4457;
+.item:hover .rating-score .badge.bg-primary{
+    background: white !important;
 }
 
 .item-details .profession {
@@ -961,8 +962,8 @@ iframe {
 }
 
 .item:hover .profession {
-    background: #ED4457;
-    color: white;
+    background: white;
+    color: black;
 }
 
 .rating {
@@ -984,8 +985,6 @@ iframe {
     transition: color 0.3s ease;
 }
 
-.item:hover .rating-reviews {
-    color: #ED4457;
 }
 
 @media (min-width: 992px) {

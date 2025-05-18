@@ -690,6 +690,16 @@ span {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
+.services-item:hover .rating-score .badge.bg-primary {
+    background: #ED4457 !important;
+    color: white !important;
+}
+
+.services-item:hover .profession {
+    background: #ED4457 !important;
+    color: white !important;
+}
+
 .services-item-photo {
     width: 120px;
     height: 120px;
@@ -1410,12 +1420,8 @@ ol {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
-.card-img-top {
-    transition: transform 0.3s ease;
-}
-
-.card:hover .card-img-top {
-    transform: scale(1.05);
+.card:hover .fw-bold {
+    color: black;
 }
 
 .card-body {
@@ -1427,10 +1433,6 @@ ol {
     font-weight: 600;
     margin-bottom: 0.5rem;
     transition: color 0.3s ease;
-}
-
-.card:hover .card-title {
-    color: #ED4457;
 }
 
 .card-text {
