@@ -13,57 +13,31 @@
     <div class="page-wrapper">
         <header class="main-header">
             <div class="container-fluid">
-                <div class="header-content">
-                    <button class="burger-menu d-lg-none">
-                        <img src="./assets/img/Menu Hamburger.png" alt="burger">
-                    </button>
-
-                    <div class="header-logo">
-                        <img src="./assets/img/logo.png" alt="Vroda">
+                <nav class="navbar navbar-expand-lg blur-navbar">
+              <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="#"><img src="./assets/img/logo.png"></a>
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  
+                  <button class="mobile-button d-lg-none">
+                    <img src="./assets/img/Add.png" alt="add">
+                  </button>
+                        
+                    <div class="user-avatar d-lg-none">
+                      <img src="./assets/img/Ellipse 230.png" alt="profile" class="rounded-circle">
                     </div>
-                    
-                    <nav class="header-nav d-none d-lg-flex ">
-                        <ul class="header-nav__list">
-                            <li class="header-nav__item">
-                                <a href="#" class="nav-link">Майстри</a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="#" class="nav-link">Послуги</a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="#" class="nav-link">Салони краси</a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="#" class="nav-link">Про сервіс</a>
-                            </li>
-                            <li class="header-nav__item">
-                                <a href="#" class="nav-link">Контакти та Зворотній зв'язок</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <!--MOBILE-->
-                    <div class="collapse navbar-collapse" id="mobileMenu">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Майстри</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Послуги</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Салони краси</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Про сервіс</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Контакти та Зворотній зв'язок</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="nav-right d-flex align-items-center">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Майстри</a>
+                    <a class="nav-link" href="#">Послуги</a>
+                    <a class="nav-link" href="#">Салони краси</a>
+                    <a class="nav-link" href="#">Про сервіс</a>
+                    <a class="nav-link" href="#">Контакти та Зворотній зв'язок</a>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-right d-flex align-items-center">
                         <div class="nav-icons d-none d-lg-flex">
                             <a href="#" class="nav-icon">
                                 <img src="./assets/img/data.png" alt="data">
@@ -79,18 +53,22 @@
                             </a>
                         </div>
 
-                        <button class="mobile-button d-lg-none">
+                        <!--<button class="mobile-button d-lg-none">
                             <img src="./assets/img/Add.png" alt="add">
                         </button>
                         
                         <div class="user-avatar d-lg-none">
                             <img src="./assets/img/Ellipse 230.png" alt="profile" class="rounded-circle">
-                        </div>
+                        </div> -->
                         
                         <div class="header-btn d-none d-lg-flex">
                             Додати запис
                         </div>
                     </div>
+            </nav>
+                   
+
+                    
                 </div>
             </div>
         </header>
@@ -211,7 +189,7 @@
                           <div class="comment-user">
                               <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-3" width="42" height="42">
                             <div>
-                              <p class="mb-1 fw-bold">Вікторія М.</p>
+                              <p class="mb-1 fw-bold">Вікторія М. </p>
                               <p class="mb-0 text-muted">Візажист</p>
                             </div>
                           </div>
@@ -248,7 +226,9 @@
                         <div class="col-md-3 d-flex">
                           <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-3" width="42" height="42">
                           <div>
-                            <p class="mb-1 fw-bold">Вікторія М.</p>
+                            <p class="mb-1 fw-bold">Вікторія М. <span class="badge bg-primary d-lg-none">
+                              <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                            </span></p>
                             <p class="mb-0 text-muted">Візажист</p>
                           </div>
                         </div>

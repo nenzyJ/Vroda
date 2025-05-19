@@ -1484,3 +1484,21 @@ ol {
     border-color:#F2F2F2 !important ;
 }
 
+
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    order: 1;
+  }
+
+  .navbar-brand {
+    order: 2;
+  }
+
+  .mobile-button {
+    order: 3;
+
+  }
+  .user-avatar {
+    order: 4;
+  }
+}

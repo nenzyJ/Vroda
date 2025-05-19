@@ -202,10 +202,28 @@ span {
 .main-header {
     position: absolute;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.285);
-    backdrop-filter: blur(10px);
+   /* background-color: rgba(255, 255, 255, 0.285);*/
+   /* backdrop-filter: blur(10px);*/
     z-index: 1000;
     padding: 0.5rem 0;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    order: 1;
+  }
+
+  .navbar-brand {
+    order: 2;
+  }
+
+  .mobile-button {
+    order: 3;
+    margin-left: auto;
+  }
+  .user-avatar {
+    order: 4;
+  }
 }
 
 .header-content {
@@ -392,9 +410,6 @@ span {
     position: relative;
 }
 
-.main-header .nav_img {
-
-}
 
 
 
@@ -985,7 +1000,7 @@ iframe {
     transition: color 0.3s ease;
 }
 
-}
+
 
 @media (min-width: 992px) {
     .other-masters h2 {
@@ -1448,14 +1463,14 @@ ol {
 }
 
 /* Header */
-.main-header {
+/*.main-header {
     position: absolute;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.285);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 0.5rem 0;
-}
+} */
 
 .main-header .container-fluid {
     padding: 0;
@@ -1679,13 +1694,15 @@ ol {
 }
 
 
-.custom-navbar {
-    background-color: rgba(255, 255, 255, 0.137);
-    backdrop-filter: blur(10px);
+.blur-navbar {
+    background-color: rgba(255, 255, 255, 0.285) !important;
+    backdrop-filter: blur(10px) !important; 
+    
 }
 
 .btn-group .btn-danger{
     background-color:#F2F2F2 !important;
     color: black !important;
     border-color:#F2F2F2 !important ;
+
 }

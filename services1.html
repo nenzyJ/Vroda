@@ -12,42 +12,59 @@
 <div class="page-wrapper">
     <header class="main-header">
         <div class="container-fluid">
-            <div class="header-content">
-                <button class="burger-menu d-lg-none">
-                  <img src="./assets/img/Menu Hamburger.png" alt="burger">
-                </button>
-                <div class="header-logo">
-                    <img src="./assets/img/logo.png" alt="Vroda">
-                </div>
-                
-                <nav class="header-nav d-none d-lg-flex">
-                    <ul class="header-nav__list">
-                        <li class="header-nav__item"><a href="#" class="nav-link">Майстри</a></li>
-                        <li class="header-nav__item"><a href="#" class="nav-link">Послуги</a></li>
-                        <li class="header-nav__item"><a href="#" class="nav-link">Салони краси</a></li>
-                        <li class="header-nav__item"><a href="#" class="nav-link">Про сервіс</a></li>
-                        <li class="header-nav__item"><a href="#" class="nav-link">Контакти та Зворотній зв'язок</a></li>
-                    </ul>
-                </nav>
-
-                <div class="nav-right d-flex align-items-center">
-                    <div class="nav-icons d-none d-lg-flex">
-                        <a href="#" class="nav-icon"><img src="./assets/img/data.png" alt="data"></a>
-                        <a href="#" class="nav-icon"><img src="./assets/img/massage.png" alt="message"></a>
-                        <a href="#" class="nav-icon"><img src="./assets/img/Setting.png" alt="settings"></a>
-                        <a href="#" class="nav-icon"><img src="./assets/img/profile.png" alt="settings"></a>
-                    </div>
-                    
-                    <button class="add-button d-lg-none me-2">
-                        <img src="./assets/img/Add.png" alt="add">
-                    </button>
-                    
+            <nav class="navbar navbar-expand-lg blur-navbar">
+              <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="#"><img src="./assets/img/logo.png"></a>
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  
+                  <button class="mobile-button d-lg-none">
+                    <img src="./assets/img/Add.png" alt="add">
+                  </button>
+                        
                     <div class="user-avatar d-lg-none">
-                        <img src="./assets/img/Ellipse 230.png" alt="profile" class="rounded-circle">
+                      <img src="./assets/img/Ellipse 230.png" alt="profile" class="rounded-circle">
                     </div>
-                    
-                    <div class="header-btn d-none d-lg-flex">Додати запис</div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Майстри</a>
+                    <a class="nav-link" href="#">Послуги</a>
+                    <a class="nav-link" href="#">Салони краси</a>
+                    <a class="nav-link" href="#">Про сервіс</a>
+                    <a class="nav-link" href="#">Контакти та Зворотній зв'язок</a>
+                  </div>
                 </div>
+              </div>
+              <div class="nav-right d-flex align-items-center">
+                        <div class="nav-icons d-none d-lg-flex">
+                            <a href="#" class="nav-icon">
+                                <img src="./assets/img/data.png" alt="data">
+                            </a>
+                            <a href="#" class="nav-icon">
+                                <img src="./assets/img/massage.png" alt="message">
+                            </a>
+                            <a href="#" class="nav-icon">
+                                <img src="./assets/img/Setting.png" alt="settings">
+                            </a>
+                            <a href="#" class="nav-icon">
+                                <img src="./assets/img/profile.png" alt="settings">
+                            </a>
+                        </div>
+
+                        <!--<button class="mobile-button d-lg-none">
+                            <img src="./assets/img/Add.png" alt="add">
+                        </button>
+                        
+                        <div class="user-avatar d-lg-none">
+                            <img src="./assets/img/Ellipse 230.png" alt="profile" class="rounded-circle">
+                        </div> -->
+                        
+                        <div class="header-btn d-none d-lg-flex">
+                            Додати запис
+                        </div>
+                    </div>
+            </nav>
             </div>
         </div>
     </header>
@@ -151,6 +168,21 @@
                     </div>
                 </div>
             </div>
+            <div class="sort-section-container d-none d-md-block">
+             <div class="btn-group">
+                          <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            За популярністю
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                </div>
+            </div>
+
 
             <!--cards-->
             <div class="row gy-4 mt-4">
@@ -241,6 +273,132 @@
                     </div>
                 </div>
 
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card shadow rounded-4 border-0 h-100">
+                        <img src="./assets/img/servicesM.png" class="card-img-top rounded-top-4" alt="Масаж">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Загальний масаж</h5>
+                            <p class="card-text text-muted" style="font-size: 14px;">
+                                Стрижемо вуса та бороду а та бородуа та бороду..
+                            </p>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">
+                                    <img src="./assets/img/Time Circle 3.png">
+                                    <i class="bi bi-clock"></i> 40 хв.</span>
+                                <span class="fw-bold">1759 ₴</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                <img src="./assets/img/😐 3.3.png" alt="star" class="me-1">
+                                <span class="text-muted">255 відгуків</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card shadow rounded-4 border-0 h-100">
+                        <img src="./assets/img/servicesM.png" class="card-img-top rounded-top-4" alt="Масаж">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Загальний масаж</h5>
+                            <p class="card-text text-muted" style="font-size: 14px;">
+                                Стрижемо вуса та бороду а та бородуа та бороду..
+                            </p>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">
+                                    <img src="./assets/img/Time Circle 3.png">
+                                    <i class="bi bi-clock"></i> 40 хв.</span>
+                                <span class="fw-bold">1759 ₴</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                <img src="./assets/img/😐 3.3.png" alt="star" class="me-1">
+                                <span class="text-muted">255 відгуків</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card shadow rounded-4 border-0 h-100">
+                        <img src="./assets/img/servicesM.png" class="card-img-top rounded-top-4" alt="Масаж">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Загальний масаж</h5>
+                            <p class="card-text text-muted" style="font-size: 14px;">
+                                Стрижемо вуса та бороду а та бородуа та бороду..
+                            </p>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">
+                                    <img src="./assets/img/Time Circle 3.png">
+                                    <i class="bi bi-clock"></i> 40 хв.</span>
+                                <span class="fw-bold">1759 ₴</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                <img src="./assets/img/😐 3.3.png" alt="star" class="me-1">
+                                <span class="text-muted">255 відгуків</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card shadow rounded-4 border-0 h-100">
+                        <img src="./assets/img/servicesM.png" class="card-img-top rounded-top-4" alt="Масаж">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Загальний масаж</h5>
+                            <p class="card-text text-muted" style="font-size: 14px;">
+                                Стрижемо вуса та бороду а та бородуа та бороду..
+                            </p>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">
+                                    <img src="./assets/img/Time Circle 3.png">
+                                    <i class="bi bi-clock"></i> 40 хв.</span>
+                                <span class="fw-bold">1759 ₴</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                <img src="./assets/img/😐 3.3.png" alt="star" class="me-1">
+                                <span class="text-muted">255 відгуків</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card shadow rounded-4 border-0 h-100">
+                        <img src="./assets/img/servicesM.png" class="card-img-top rounded-top-4" alt="Масаж">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Загальний масаж</h5>
+                            <p class="card-text text-muted" style="font-size: 14px;">
+                                Стрижемо вуса та бороду а та бородуа та бороду..
+                            </p>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">
+                                    <img src="./assets/img/Time Circle 3.png">
+                                    <i class="bi bi-clock"></i> 40 хв.</span>
+                                <span class="fw-bold">1759 ₴</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                <img src="./assets/img/😐 3.3.png" alt="star" class="me-1">
+                                <span class="text-muted">255 відгуків</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card shadow rounded-4 border-0 h-100">
+                        <img src="./assets/img/servicesM.png" class="card-img-top rounded-top-4" alt="Масаж">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Загальний масаж</h5>
+                            <p class="card-text text-muted" style="font-size: 14px;">
+                                Стрижемо вуса та бороду а та бородуа та бороду..
+                            </p>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">
+                                    <img src="./assets/img/Time Circle 3.png">
+                                    <i class="bi bi-clock"></i> 40 хв.</span>
+                                <span class="fw-bold">1759 ₴</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                <img src="./assets/img/😐 3.3.png" alt="star" class="me-1">
+                                <span class="text-muted">255 відгуків</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="card shadow rounded-4 border-0 h-100">
                         <img src="./assets/img/servicesM.png" class="card-img-top rounded-top-4" alt="Масаж">
