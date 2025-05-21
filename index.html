@@ -10,34 +10,33 @@
         crossorigin="anonymous">
 </head>
 <body>
+    <!-- NAVIGATION -->
     <div class="page-wrapper">
         <header class="main-header">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg blur-navbar">
-              <div class="container-fluid d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="#"><img src="./assets/img/logo.png"></a>
-                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  
-                  <button class="mobile-button d-lg-none">
-                    <img src="./assets/img/Add.png" alt="add">
-                  </button>
-                        
-                    <div class="user-avatar d-lg-none">
-                      <img src="./assets/img/Ellipse 230.png" alt="profile" class="rounded-circle">
+                    <div class="container-fluid d-flex justify-content-between align-items-center">
+                        <a class="navbar-brand" href="#"><img src="./assets/img/logo.png"></a>
+                        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            <button class="mobile-button d-lg-none">
+                                <img src="./assets/img/Add.png" alt="add">
+                            </button>
+                            <div class="user-avatar d-lg-none">
+                                <img src="./assets/img/Ellipse 230.png" alt="profile" class="rounded-circle">
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Майстри</a>
+                                <a class="nav-link" href="#">Послуги</a>
+                                <a class="nav-link" href="#">Салони краси</a>
+                                <a class="nav-link" href="#">Про сервіс</a>
+                                <a class="nav-link" href="#">Контакти та Зворотній зв'язок</a>
+                            </div>
+                        </div>
                     </div>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Майстри</a>
-                    <a class="nav-link" href="#">Послуги</a>
-                    <a class="nav-link" href="#">Салони краси</a>
-                    <a class="nav-link" href="#">Про сервіс</a>
-                    <a class="nav-link" href="#">Контакти та Зворотній зв'язок</a>
-                  </div>
-                </div>
-              </div>
-              <div class="nav-right d-flex align-items-center">
+                    <div class="nav-right d-flex align-items-center">
                         <div class="nav-icons d-none d-lg-flex">
                             <a href="#" class="nav-icon">
                                 <img src="./assets/img/data.png" alt="data">
@@ -52,24 +51,11 @@
                                 <img src="./assets/img/profile.png" alt="settings">
                             </a>
                         </div>
-
-                        <!--<button class="mobile-button d-lg-none">
-                            <img src="./assets/img/Add.png" alt="add">
-                        </button>
-                        
-                        <div class="user-avatar d-lg-none">
-                            <img src="./assets/img/Ellipse 230.png" alt="profile" class="rounded-circle">
-                        </div> -->
-                        
                         <div class="header-btn d-none d-lg-flex">
                             Додати запис
                         </div>
                     </div>
-            </nav>
-                   
-
-                    
-                </div>
+                </nav>
             </div>
         </header>
 
@@ -89,7 +75,6 @@
                             </li>
                         </ol>
                     </nav>
-
                     <div class="master-info ">
                         <div class="master-avatar">
                             <img src="./assets/img/photo.png" alt="Володимир К.">
@@ -98,7 +83,6 @@
                             <button class="master-actions__btn profile-actions__btn--share d-none d-lg-inline-block">
                                 <img src="./assets/img/Vector.png" alt="data">
                             </button>
-
                             <button class="master-actions__btn profile-actions__btn--message d-none d-lg-inline-block">
                                 <img src="./assets/img/Search 3.png" alt="data">
                             </button>
@@ -118,7 +102,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- ABOUT -->
             <div class="container">
                 <section class="about">
                     <div class="about-content d-flex flex-column flex-lg-row">
@@ -127,18 +111,28 @@
                                 Володимир К. <span>Масажист</span>
                             </h2>
                             <h4 class="about-location">
-                            <img src="./assets/img/LOCATION.png" alt="">
-                            <span>Кременчук, Крюківський</span></h4>
+                                <img src="./assets/img/LOCATION.png" alt="">
+                                <span>Кременчук, Крюківський</span>
+                            </h4>
+                            <div class="score-bnt d-none d-lg-block">
+                                <span class="badge bg-primary" style="border-radius: 5px;">
+                                    <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                                </span>
+                            </div>
                         </div>
+                        <div class="bottom-line__avatars position-absolute d-flex align-items-center d-none d-lg-block ">
+                                <img src="./assets/img/line1.png" alt="avatar" class="avatar-img overlapped-avatar" width="32" height="32">
+                                <img src="./assets/img/line2.png" alt="avatar" class="avatar-img overlapped-avatar" width="32" height="32">
+                                <img src="./assets/img/line3.png" alt="avatar" class="avatar-img overlapped-avatar" width="32" height="32">
+                                <span class="config" style="font-size: 20px;">35 відгуків</span>
+                            </div>
                         <div class="about-right order-2 order-lg-2">
                             <h4 class="about-description">👋 Привіт!
-                                Я - Володимир. Кажуть, що я дивовижний масажист. Не вірите - замовте одну з моїх послуг. Це короткий
-                                текст про майстра, який можна в декстоп версії не розгорнути.</h4>
+                                Я - Володимир. Кажуть, що я дивовижний масажист. Не вірите - замовте одну з моїх послуг. Це короткий текст про майстра, який можна в декстоп версії не розгорнути.</h4>
                             <div class="about-actions">
                                 <button class="about-actions__btn about-actions__btn--write">
                                     Написати мені
                                 </button>
-
                                 <button class="about-actions__btn about-actions__btn--call">
                                     <img src="./assets/img/data.png" alt="data">
                                 </button>
@@ -146,238 +140,192 @@
                         </div>
                     </div>
                 </section>
-
                 <section class="services-reviews-tabs mt-4">
                     <div class="tabs-container">
                         <a href="#" class="tab active">Послуги</a>
                         <a href="#" class="tab">Відгуки<span class="number-massage">35</span></a>
-                        
                     </div>
-
+                </section>
                     <div class="bottom-line d-flex justify-content-between align-items-center px-3 py-2">
                         <div class="bottom-line__avatars d-flex d-lg-none">
                             <img src="./assets/img/line1.png" alt="avatar" class="avatar-img overlapped-avatar" width="32" height="32">
                             <img src="./assets/img/line2.png" alt="avatar" class="avatar-img overlapped-avatar" width="32" height="32">
                             <img src="./assets/img/line3.png" alt="avatar" class="avatar-img overlapped-avatar" width="32" height="32">
                             <span class="badge bg-primary">
-                              <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                                <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
                             </span>
                         </div>
-                        <!-- Example single danger button -->
                         <div class="btn-group d-lg-none">
-                          <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            За популярністю
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                За популярністю
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
                         </div>
                     </div>
-                </section>
-
-                <!-- response-->
+                
+                <!-- REVIEWS -->
                 <div class="container py-4">
-                  <ul class="list-unstyled">
-                    <li class="review-item border-bottom pb-3 mb-3">
-                      <div class="row">
-                        <!-- Left: Avatar + Name -->
-                        <div class="col-md-3 d-flex">
-                          <div class="comment-user">
-                              <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-3" width="42" height="42">
-                            <div>
-                              <p class="mb-1 fw-bold">Вікторія М. </p>
-                              <p class="mb-0 text-muted">Візажист</p>
+                    <ul class="list-unstyled">
+                        <li class="review-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-2 flex-wrap">
+                                <!-- Аватар + Ім'я -->
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-2" width="42" height="42">
+                                    <div>
+                                        <p class="mb-0 fw-bold">Вікторія М.</p>
+                                        <p class="mb-0 text-muted small">Візажист</p>
+                                    </div>
+                                </div>
+                                <!-- Рейтинг -->
+                                <div class="d-flex align-items-center mt-2 mt-sm-0 d-lg-none">
+                                    <div class="comment-rating">
+                                        <span class="badge bg-primary">
+                                            <img src="./assets/img/😍 4.9.png" alt="star">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 position-relative">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="badge bg-primary d-none d-lg-block">
+                                            <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                                        </span>
+                                    </div>
+                                    <p class="mb-2 small">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
+                                    </p>
+                                    <span class="position-absolute end-0 top-0 text-muted small d-none d-lg-block">Сьогодні, 14:50</span>
+                                </div>
                             </div>
-                          </div>
-                            <div class="comment-rating">
-                              <span class="badge bg-primary">
-                                <img src="./assets/img/😍 4.9.png" alt="star">
-                              </span>
+                            <!-- Час -->
+                            <div class="text-muted small d-lg-none">Сьогодні, 14:50</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container py-4">
+                    <ul class="list-unstyled">
+                        <li class="review-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-2 flex-wrap">
+                                <!-- Аватар + Ім'я -->
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-2" width="42" height="42">
+                                    <div>
+                                        <p class="mb-0 fw-bold">Вікторія М.</p>
+                                        <p class="mb-0 text-muted small">Візажист</p>
+                                    </div>
+                                </div>
+                                <!-- Рейтинг -->
+                                <div class="d-flex align-items-center mt-2 mt-sm-0 d-lg-none">
+                                    <div class="comment-rating">
+                                        <span class="badge bg-primary">
+                                            <img src="./assets/img/😍 4.9.png" alt="star">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 position-relative">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="badge bg-primary d-none d-lg-block">
+                                            <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                                        </span>
+                                    </div>
+                                    <p class="mb-2 small">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
+                                    </p>
+                                    <span class="position-absolute end-0 top-0 text-muted small d-none d-lg-block">Сьогодні, 14:50</span>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Right: Rating + Text + Time -->
-                        <div class="comment-row col-md-9 d-flex">
-                          <div class="comment-body">
-                            <div class="comment-rating">
-                              <span class="badge bg-primary">
-                                <img src="./assets/img/😍 4.9.png" alt="star">
-                              </span>
+                            <!-- Час -->
+                            <div class="text-muted small d-lg-none">Сьогодні, 14:50</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container py-4">
+                    <ul class="list-unstyled">
+                        <li class="review-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-2 flex-wrap">
+                                <!-- Аватар + Ім'я -->
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-2" width="42" height="42">
+                                    <div>
+                                        <p class="mb-0 fw-bold">Вікторія М.</p>
+                                        <p class="mb-0 text-muted small">Візажист</p>
+                                    </div>
+                                </div>
+                                <!-- Рейтинг -->
+                                <div class="d-flex align-items-center mt-2 mt-sm-0 d-lg-none">
+                                    <div class="comment-rating">
+                                        <span class="badge bg-primary">
+                                            <img src="./assets/img/😍 4.9.png" alt="star">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 position-relative">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="badge bg-primary d-none d-lg-block">
+                                            <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                                        </span>
+                                    </div>
+                                    <p class="mb-2 small">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
+                                    </p>
+                                    <span class="position-absolute end-0 top-0 text-muted small d-none d-lg-block">Сьогодні, 14:50</span>
+                                </div>
                             </div>
-                            <p class="comment-text mb-2 small">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
-                            </p>
-                          </div>
-                          <span class="comment-time text-muted small">Сьогодні, 14:50</span>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+                            <!-- Час -->
+                            <div class="text-muted small d-lg-none">Сьогодні, 14:50</div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="container py-4">
-                  <ul class="list-unstyled">
-                    <li class="review-item border-bottom pb-3 mb-3">
-                      <div class="row">
-                        <!-- Left: Avatar + Name -->
-                        <div class="col-md-3 d-flex">
-                          <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-3" width="42" height="42">
-                          <div>
-                            <p class="mb-1 fw-bold">Вікторія М. <span class="badge bg-primary d-lg-none">
-                              <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
-                            </span></p>
-                            <p class="mb-0 text-muted">Візажист</p>
-                          </div>
-                        </div>
-
-                        <!-- Right: Rating + Text + Time -->
-                        <div class="col-md-9 position-relative">
-                          <div class="d-flex align-items-center mb-2">
-                            <span class="badge bg-primary">
-                              <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
-                            </span>
-                          </div>
-                          <p class="mb-2 small">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
-                          </p>
-                          <span class="position-absolute end-0 top-0 text-muted small">Сьогодні, 14:50</span>
-                        </div>
-                      </div>
-                    </li>
-
-                  </ul>
+                    <ul class="list-unstyled">
+                        <li class="review-item border-bottom pb-3 mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-2 flex-wrap">
+                                <!-- Аватар + Ім'я -->
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-2" width="42" height="42">
+                                    <div>
+                                        <p class="mb-0 fw-bold">Вікторія М.</p>
+                                        <p class="mb-0 text-muted small">Візажист</p>
+                                    </div>
+                                </div>
+                                <!-- Рейтинг -->
+                                <div class="d-flex align-items-center mt-2 mt-sm-0 d-lg-none">
+                                    <div class="comment-rating">
+                                        <span class="badge bg-primary">
+                                            <img src="./assets/img/😍 4.9.png" alt="star">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 position-relative">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="badge bg-primary d-none d-lg-block">
+                                            <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                                        </span>
+                                    </div>
+                                    <p class="mb-2 small">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
+                                    </p>
+                                    <span class="position-absolute end-0 top-0 text-muted small d-none d-lg-block">Сьогодні, 14:50</span>
+                                </div>
+                            </div>
+                            <!-- Час -->
+                            <div class="text-muted small d-lg-none">Сьогодні, 14:50</div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="container py-4">
-                  <ul class="list-unstyled">
-                    <li class="review-item border-bottom pb-3 mb-3">
-                      <div class="row">
-                        <!-- Left: Avatar + Name -->
-                        <div class="col-md-3 d-flex">
-                          <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-3" width="42" height="42">
-                          <div>
-                            <p class="mb-1 fw-bold">Вікторія М.</p>
-                            <p class="mb-0 text-muted">Візажист</p>
-                          </div>
-                        </div>
-
-                        <!-- Right: Rating + Text + Time -->
-                        <div class="col-md-9 position-relative">
-                          <div class="d-flex align-items-center mb-2">
-                            <span class="badge bg-primary">
-                              <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
-                            </span>
-                          </div>
-                          <p class="mb-2 small">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
-                          </p>
-                          <span class="position-absolute end-0 top-0 text-muted small">Сьогодні, 14:50</span>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="container py-4">
-                  <ul class="list-unstyled">
-                    <li class="review-item border-bottom pb-3 mb-3">
-                      <div class="row">
-                        <!-- Left: Avatar + Name -->
-                        <div class="col-md-3 d-flex">
-                          <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-3" width="42" height="42">
-                          <div>
-                            <p class="mb-1 fw-bold">Вікторія М.</p>
-                            <p class="mb-0 text-muted">Візажист</p>
-                          </div>
-                        </div>
-
-                        <!-- Right: Rating + Text + Time -->
-                        <div class="col-md-9 position-relative">
-                          <div class="d-flex align-items-center mb-2">
-                            <span class="badge bg-primary">
-                            <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
-                            </span>
-                          </div>
-                          <p class="mb-2 small">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
-                          </p>
-                          <span class="position-absolute end-0 top-0 text-muted small">Сьогодні, 14:50</span>
-                        </div>
-                      </div>
-                    </li>
-
-                  </ul>
-                </div>
-
-                <div class="container py-4">
-                  <ul class="list-unstyled">
-                    <li class="review-item border-bottom pb-3 mb-3">
-                      <div class="row">
-                        <!-- Left: Avatar + Name -->
-                        <div class="col-md-3 d-flex">
-                          <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-3" width="42" height="42">
-                          <div>
-                            <p class="mb-1 fw-bold">Вікторія М.</p>
-                            <p class="mb-0 text-muted">Візажист</p>
-                          </div>
-                        </div>
-
-                        <!-- Right: Rating + Text + Time -->
-                        <div class="col-md-9 position-relative">
-                          <div class="d-flex align-items-center mb-2">
-                            <span class="badge bg-primary">
-                            <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
-                            </span>
-                          </div>
-                          <p class="mb-2 small">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
-                          </p>
-                          <span class="position-absolute end-0 top-0 text-muted small">Сьогодні, 14:50</span>
-                        </div>
-                      </div>
-                    </li>
-
-                  </ul>
-                </div>
-                <div class="container py-4">
-                  <ul class="list-unstyled">
-                    <li class="review-item border-bottom pb-3 mb-3">
-                      <div class="row">
-                        <!-- Left: Avatar + Name -->
-                        <div class="col-md-3 d-flex">
-                          <img src="./assets/img/Вікторія М.png" alt="Avatar" class="rounded-circle me-3" width="42" height="42">
-                          <div>
-                            <p class="mb-1 fw-bold">Вікторія М.</p>
-                            <p class="mb-0 text-muted">Візажист</p>
-                          </div>
-                        </div>
-
-                        <!-- Right: Rating + Text + Time -->
-                        <div class="col-md-9 position-relative">
-                          <div class="d-flex align-items-center mb-2">
-                            <span class="badge bg-primary">
-                            <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
-                            </span>
-                          </div>
-                          <p class="mb-2 small">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy...
-                          </p>
-                          <span class="position-absolute end-0 top-0 text-muted small">Сьогодні, 14:50</span>
-                        </div>
-                      </div>
-                    </li>
                 <div class="text-center mt-4">
                     <button class="btn btn-link text-danger fw-semibold" style="text-decoration: none;">
-                      Розгорнути відгуки <i class="bi bi-chevron-down"></i>
+                        Розгорнути відгуки <i class="bi bi-chevron-down"></i>
                     </button>
                 </div>
-                </ul>
             </div>
-        </section>
-
-        <!--location-->
+        </main>
+        <!-- LOCATION -->
         <div class="container">
             <div class="fs-3 fs-md-2 mb-3 text-center text-md-start">
                 <h2 class="location-title mb-3">Місцезнаходження</h2>
@@ -387,40 +335,40 @@
                     Кременчук, Крюківський
                 </p>
                 <div class="map-container">
-                    <iframe id="location-map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83678.88066812145!2d33.37574245735976!3d49.04928866914351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d75351789cd13b%3A0x779fe869156a36aa!2z0JrRgNGO0LrQvtCy0YHQutC40Lkg0YDQsNC50L7QvSwg0JrRgNC10LzQtdC90YfRg9CzLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzk2MDA!5e0!3m2!1sru!2sua!4v1746736427880!5m2!1sru!2sua"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+                    <iframe id="location-map" style="border-radius: 20px;" class="rounded-4"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83678.88066812145!2d33.37574245735976!3d49.04928866914351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d75351789cd13b%3A0x779fe869156a36aa!2z0JrRgNGO0LrQvtCy0YHQutC40Lkg0YDQsNC50L7QvSwg0JrRgNC10LzQtdC90YfRg9CzLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzk2MDA!5e0!3m2!1sru!2sua!4v1746736427880!5m2!1sru!2sua"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
             </div>
         </div>
-
-        <!--video-->
-        <div class="container py-5 d-none d-md-block">
-          <div class="row mb-4 align-items-start">
-            <div class="col-md-6">
-              <h2 class="fw-bold">
-                Швидкий пошук майстрів<br>
-                та салонів краси в Києві,<br>
-                Львові, Дніпрі, по Україні
-              </h2>
+        <!-- VIDEO -->
+        <section class="video-section" style="background-color: #F2F2F2;">
+            <div class="container py-5 d-none d-md-block">
+                <div class="row mb-4 align-items-start">
+                <div class="col-md-6">
+                    <h2 class="fw-bold">
+                    Швидкий пошук майстрів<br>
+                    та салонів краси в Києві,<br>
+                    Львові, Дніпрі, по Україні
+                    </h2>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-muted">
+                    Текст з точки зору звичайного клієнта сервісу. Це текст для SEO з ключовими словами про сервіс з точки зору клієнта. Exerci tation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+                </div>
+                <div class="ratio ratio-16x9" style="border-radius: 20px; overflow: hidden;">
+                <video class="w-100 h-100" autoplay muted loop playsinline>
+                    <source src="./assets/video/-c569-4332-822c-3677f4dc9121.mp4" type="video/mp4">
+                </video>
+                </div>
             </div>
-            <div class="col-md-6">
-              <p class="text-muted">
-                Текст з точки зору звичайного клієнта сервісу. Це текст для SEO з ключовими словами про сервіс з точки зору клієнта. Exerci tation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-          </div>
-
-            <div class="ratio ratio-16x9 rounded overflow-hidden border">
-              <video>
-                <source src="./assets/video/-c569-4332-822c-3677f4dc9121.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        <!--other masters-->
-        <section class="other-masters" >
+            </section>
+        <!-- OTHER MASTERS -->
+        <section class="other-masters">
             <h2><span>Інші майстри</span> м.Кременчук</h2>
             <div class="items">
                 <div class="item">
@@ -432,15 +380,14 @@
                         <div class="profession">БАРБЕР</div>
                         <div class="rating">
                             <div class="rating-score">
-                              <span class="badge bg-primary">
-                                <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
-                              </span>
+                                <span class="badge bg-primary">
+                                    <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                                </span>
                             </div>
                             <div class="rating-reviews">37 відгуків</div>
                         </div>
                     </div>
                 </div>
-            
                 <div class="item">
                     <div class="item-photo">
                         <img src="./assets/img/master2.png" alt="Віталій Станіславович">
@@ -450,9 +397,9 @@
                         <div class="profession">БАРБЕР</div>
                         <div class="rating">
                             <div class="rating-score">
-                              <span class="badge bg-primary">
-                                <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
-                              </span>
+                                <span class="badge bg-primary">
+                                    <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                                </span>
                             </div>
                             <div class="rating-reviews">37 відгуків</div>
                         </div>
@@ -467,9 +414,9 @@
                         <div class="profession">БАРБЕР</div>
                         <div class="rating">
                             <div class="rating-score">
-                              <span class="badge bg-primary">
-                                <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
-                              </span>
+                                <span class="badge bg-primary">
+                                    <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                                </span>
                             </div>
                             <div class="rating-reviews">37 відгуків</div>
                         </div>
@@ -484,9 +431,9 @@
                         <div class="profession">КОСМЕТОЛОГ</div>
                         <div class="rating">
                             <div class="rating-score">
-                              <span class="badge bg-primary">
-                                <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
-                              </span>
+                                <span class="badge bg-primary">
+                                    <img src="./assets/img/😍 4.9.png" alt="star" class="me-2">
+                                </span>
                             </div>
                             <div class="rating-reviews">37 відгуків</div>
                         </div>
@@ -501,45 +448,44 @@
                 <div class="dot"></div>
             </div>
         </section>
-        <!--advertising-->
-        <section class="py-4 py-md-5"
-        style="background: linear-gradient(to bottom, #d4f9dc, #d9f0fc); border: 1px dashed #ccc; border-radius: 20px;">
-        <div class="container">
-        <div class="row align-items-center">
-
-        <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
-            <h2 class="fw-bold h4 h-md-3">
-                Маєте улюблений салон, майстра чи майстриню?
-            </h2>
-        </div>
-
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-            <div class="text-center text-md-start">
-                <p class="mb-3">
-                    Запросіть їх та отримайте <strong>[подарунок]</strong> від українського виробника
-                    <strong>[НАЗВА]</strong> за 3 інвайти!<br class="d-none d-md-block">
-                    Нижче буде лого партнера та фото подарунка.
-                </p>
-                <button class="btn btn-dark rounded-4 px-4">Надіслати інвайт</button>
+        <!-- ADVERTISING -->
+        <section class="py-4 py-md-5" style="background: linear-gradient(to bottom, #d4f9dc, #d9f0fc); border-radius: 20px;">
+            <div class="container-banner">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        <h2 class="fw-bold h4 h-md-3">
+                            Маєте улюблений салон, майстра чи майстриню?
+                        </h2>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                        <div class="text-center text-md-start">
+                            <p class="mb-3">
+                                Запросіть їх та отримайте <strong>[подарунок]</strong> від українського виробника <strong>[НАЗВА]</strong> за 3 інвайти!<br class="d-none d-md-block">
+                                Нижче буде лого партнера та фото подарунка.
+                            </p>
+                            <button class="btn btn-dark rounded-4 px-4">Надіслати інвайт</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center mt-3 mt-md-0">
+                        <img src="./assets/img/airp.png" alt="Подарунок" class="img-fluid" style="max-width: 200px; max-height: 150px;">
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="col-12 col-md-4 text-center mt-3 mt-md-0">
-            <img src="./assets/img/airp.png" alt="Подарунок" class="img-fluid" style="max-width: 200px; max-height: 150px;">
-        </div>
-        </div>
-        </div>
         </section>
-    </main>
+    </div>
+     <footer class="footer">
+                <div class="footer-placeholder">
+                    Футер заповнюється наприкінці після розробки всіх сторінок
+                </div>
 
-    <footer>
-        <div class="footer" style="">
-            <h1>Футер заповнюється наприкінці після розробки всіх сторінок</h1>
-        </div>
-    </footer>
-
+                <!-- Footer Bottom -->
+                    <div class="footer-bottom">
+                        <strong>1757</strong> б'юті послуг в [Назва міста]
+                    </div>
+                </div>
+            </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-            crossorigin="anonymous"></script>
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 </html>

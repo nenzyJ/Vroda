@@ -205,7 +205,7 @@ span {
    /* background-color: rgba(255, 255, 255, 0.285);*/
    /* backdrop-filter: blur(10px);*/
     z-index: 1000;
-    padding: 0.5rem 0;
+
 }
 
 @media (max-width: 991.98px) {
@@ -230,9 +230,8 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 176px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    
 }
 
 .header-logo img {
@@ -433,7 +432,6 @@ span {
 
 
 .about {
-    margin-top: -40px;
     position: relative;
     z-index: 2;
 }
@@ -451,7 +449,7 @@ span {
 }
 
 .about-left h4 {
-    margin-top: 16px;
+    margin-top: 0px;
 }
 
 .about-right {
@@ -464,6 +462,7 @@ span {
 .about-title {
     font-size: 3rem;
     max-width: 400px;
+    
 }
 
 .about-title span {
@@ -848,45 +847,6 @@ iframe {
 }
 
 /* video */
-.video {
-    background-color: #F2F2F2;
-    padding: 40px 0;
-}
-
-.container-video {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.video-block {
-    display: flex;
-    align-items: center;
-    gap: 196px;
-    margin-bottom: 36px;
-    width: 100%;
-}
-
-.video-block p {
-    max-width: 470px;
-    margin: 0;
-
-}
-
-.video-block h1 {
-    font-size: 1.8rem;
-    max-width: 400px;
-    margin: 0;
-}
-
-.container-video video {
-    border-radius: 15px;
-    width: 1000px;
-    max-width: 50%;
-}
 
 
 /* other masters*/
@@ -917,7 +877,7 @@ iframe {
     border-radius: 16px;
     padding: 1rem;
     scroll-snap-align: start;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -1043,10 +1003,34 @@ iframe {
     background: #ED4457;
 }
 /*footer */
-footer {
+.footer-placeholder {
+    height: 400px;
+    padding: 100px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 56px;
     background: linear-gradient(to right, #ced9ff 0%, #e2fcff 100%);
-
 }
+
+    .footer-bottom {
+      padding: 10px 20px;
+      text-align: center;
+      background-color: #fff;
+      font-size: 14px;
+    }
+
+
+    .btn-black {
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 25px;
+    }
+
+    .gift-image {
+      max-width: 100px;
+    }
+
 
 /* Мобильная навигация */
 @media (max-width: 991.98px) {
@@ -1058,6 +1042,7 @@ footer {
         border: none;
         padding: 0.5rem;
         margin-left: 1rem;
+        
     }
 
     .navbar-toggler:focus {
@@ -1593,6 +1578,13 @@ ol {
     
     .welcome .bottom-line {
         padding: 10px 80px;
+        position: relative;
+        top: 40px;
+        
+    }
+    .welcome .master-avatar{
+        position: relative;
+        top: 80px;
     }
 }
 
@@ -1704,5 +1696,63 @@ ol {
     background-color:#F2F2F2 !important;
     color: black !important;
     border-color:#F2F2F2 !important ;
+
+}
+
+
+@media (max-width: 991.98px) {
+    .about-left{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        
+    }
+}
+
+.avatar-group {
+  position: relative;
+}
+
+.overlapped-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -10px;
+}
+
+.overlapped-avatar:first-child {
+  margin-left: 0;
+}
+
+.rating-img {
+  width: 48px; /* отрегулируйте под ваш размер */
+  height: auto;
+}
+
+/*bottom-line avatars(about) */
+.bottom-line__avatars {
+  top: 220px;
+  left: 5px;
+}
+
+.config{
+    
+    weight: 500;
+}
+
+.overlapped-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -10px;
+}
+
+.overlapped-avatar:first-child {
+  margin-left: 0;
+}
+
+.container-banner{
 
 }
