@@ -837,7 +837,6 @@ iframe {
 }
 
 
-/* video */
 
 
 /* other masters*/
@@ -1305,6 +1304,11 @@ ol {
     color: var(--Black-70-text-body);
     font-size: 16px;
     line-height: 1.5;
+}
+
+video {
+    border-radius: 32px;
+    overflow: hidden;
 }
 
 .advertising-section {
