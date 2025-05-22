@@ -1875,3 +1875,54 @@ video {
   padding: 20px;
   box-sizing: border-box;
 }
+
+/* */
+.top-right-button-container {
+    /* Чтобы разместить кнопку в правом верхнем углу, можно использовать абсолютное позиционирование,
+       если body является контейнером для всей страницы.
+       Или flexbox, если это часть хедера.
+       Я покажу вариант с flexbox для простоты в рамках отдельного контейнера. */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Прижимает содержимое к правому краю */
+    padding: 20px; /* Отступы от краев страницы */
+    box-sizing: border-box; /* Важно для padding */
+}
+
+.find-specialist-button {
+    background-color: #e0e0e0; /* Светло-серый фон кнопки */
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; /* Закругленные углы */
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Отступ между текстом и иконкой */
+    white-space: nowrap; /* Предотвращает перенос текста */
+}
+
+.find-specialist-button:hover {
+    background-color: #d0d0d0;
+}
+
+.burger-icon {
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+/* Медиа-запрос для очень маленьких экранов, чтобы кнопка не вылезала */
+@media (max-width: 600px) {
+    .find-specialist-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+         display: none;
+    }
+    .top-right-button-container {
+        padding: 15px; /* Уменьшим отступы на маленьких экранах */
+        display: none;
+    }
+}
