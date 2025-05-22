@@ -586,12 +586,13 @@ span {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-bottom: 8px;
+   
 }
 
 .tabs-container .number-massage{
     min-width: 44px;
     height: 34px;
-    padding: 5px 12.5px 10px 12.5px;
+    padding: 3px 12.5px 10px 12.5px;
    
     gap: 10px;
     border-radius: 16px;
@@ -604,6 +605,7 @@ span {
     margin-bottom: 8px;
     position: absolute;
     margin: 10px;
+    
 }
 
 .add-service-btn:hover {
