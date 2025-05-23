@@ -99,6 +99,9 @@ span {
     background-color: rgba(255, 255, 255, 0.285);
     backdrop-filter: blur(10px);
     border-radius: 8px;
+    @media (max-width: 768px) {
+        border-radius: 0;
+    }
 }
 
 .welcome .bottom-line {
@@ -428,9 +431,12 @@ span {
     text-align: left;
     @media (max-width: 768px) {
         text-align: center;
+
         
     }
 }
+
+
 
 .about-left h4 {
     margin-top: 16px;
@@ -750,6 +756,8 @@ span {
     color: #666;
 }
 
+
+
 .services-navigation-dots {
     display: flex;
     justify-content: center;
@@ -1037,6 +1045,14 @@ ol {
     margin: 0;
 }
 
+.container-services-breadcrumb {
+    padding: 0 0 0 100px;
+    @media(max-width: 768px) {
+        padding: 0;
+        
+    }
+}
+
 
 .breadcrumb-wrapper {
     position: static;
@@ -1057,6 +1073,10 @@ ol {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    @media(max-width: 768px) {
+        width: 100%;
+        
+    }
 }
 
 .breadcrumb::-webkit-scrollbar {
@@ -1109,6 +1129,7 @@ ol {
         left: 0;
         right: 0;
         z-index: 999;
+        width: 100%;
     }
 
     ol.breadcrumb {
@@ -1119,6 +1140,8 @@ ol {
         z-index: 999;
         margin: 0;
         border-radius: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .breadcrumb-link {
@@ -1399,13 +1422,23 @@ video {
     }
 }
 
-.card {
+/* MAIN CARD*/
+
+
+/* .card {
     border: none;
     border-radius: 16px;
     transition: all 0.3s ease;
     background: white;
     height: 100%;
+    @media(max-width: 768px) {
+        display: none!important;
+        
+    }
+    
 }
+
+
 
 .card:hover {
     transform: translateY(-8px);
@@ -1467,6 +1500,176 @@ video {
 
 .card * {
     transition: all 0.3s ease;
+} */
+
+
+
+.cards-block {
+  margin-top: 2rem;
+  @media(max-width: 768px) {
+    display: none;
+    
+  };
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: none!important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.card-info .price {
+  font-weight: bold;
+  color: #000;
+}
+
+.card-reviews {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.card-reviews img {
+  margin-right: 0.25rem;
+}
+
+.more-services {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card * {
+    transition: all 0.3s ease;
+}
+
+
+/* Mobile view */
+
+.mobile-service-card {
+  padding: 12px;
+  font-family: sans-serif;
+  display: none;
+  @media(max-width: 768px) {
+    display: block;
+    
+  }
+}
+
+.mobile-service-card:hover {
+  transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.service-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.service-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-details {
+  flex: 1;
+}
+
+.service-desc {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 4px;
+}
+
+.service-price {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.service-tag {
+  display: inline-block;
+  background: #d9d9d9;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.service-location {
+  font-size: 13px;
+  color: #777;
+}
+
+.mobile-service-card:hover {
+  
+}
+
+.more-btn-more {
+    @media(max-width: 768px) {
+        display: none;
+        
+    }
 }
 
 
@@ -1747,4 +1950,12 @@ top: 720px;
   padding: 20px;
   box-sizing: border-box;
 }
+
+.row {
+}
+.gy-4 {
+}
+.mt-4 {
+}
+
 
