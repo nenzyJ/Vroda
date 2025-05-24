@@ -12,48 +12,73 @@
     <div class="page-wrapper">
         <header class="main-header">
             <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg blur-navbar">
-                    <div class="container-fluid d-flex justify-content-between align-items-center">
-                        <a class="navbar-brand" href="#"><img src="./assets/img/logo.png"></a>
-                        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            <button class="mobile-button d-lg-none">
-                                <img src="./assets/img/Add.png" alt="add">
-                            </button>
-                            <div class="user-avatar d-lg-none">
-                                <img src="./assets/img/Ellipse 230.png" alt="profile" class="rounded-circle">
-                            </div>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="#">Майстри</a>
-                                <a class="nav-link" href="#">Послуги</a>
-                                <a class="nav-link" href="#">Салони краси</a>
-                                <a class="nav-link" href="#">Про сервіс</a>
-                                <a class="nav-link" href="#">Контакти та Зворотній зв'язок</a>
-                            </div>
-                        </div>
+                        <div class="header-content">
+
+            <div class="mobile-header-content d-lg-none">
+                <div class="mobile-left-elements">
+                    <button class="mobile-burger-button">
+                        <img src="./assets/img/Menu Hamburger.png" alt="burger">
+                    </button>
+                    <a href="#" class="header-logo-mobile">
+                        <img src="./assets/img/logo.png" alt="Vroda">
+                    </a>
+                </div>
+                <div class="mobile-right-elements">
+                    <button class="mobile-add-button">
+                        <img src="./assets/img/Add.png" alt="add">
+                    </button>
+                    <div class="user-avatar-mobile">
+                        <img src="./assets/img/Ellipse 230.png" alt="profile">
                     </div>
-                    <div class="nav-right d-flex align-items-center">
-                        <div class="nav-icons d-none d-lg-flex">
-                            <a href="#" class="nav-icon">
-                                <img src="./assets/img/data.png" alt="data">
-                            </a>
-                            <a href="#" class="nav-icon">
-                                <img src="./assets/img/massage.png" alt="message">
-                            </a>
-                            <a href="#" class="nav-icon">
-                                <img src="./assets/img/Setting.png" alt="settings">
-                            </a>
-                            <a href="#" class="nav-icon">
-                                <img src="./assets/img/profile.png" alt="settings">
-                            </a>
-                        </div>
-                        <div class="header-btn d-none d-lg-flex">
-                            Додати запис
-                        </div>
-                    </div>
+                </div>
+            </div>
+
+            <div class="header-left-side d-none d-lg-flex">
+                <div class="header-logo">
+                    <img src="./assets/img/logo.png" alt="Vroda">
+                </div>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a href="#" class="nav-link">Майстри</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#" class="nav-link">Послуги</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#" class="nav-link">Салони краси</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#" class="nav-link">Про сервіс</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="#" class="nav-link">Контакти та Зворотній зв'язок</a>
+                        </li>
+                    </ul>
                 </nav>
+            </div>
+
+            <div class="nav-right d-none d-lg-flex align-items-center">
+                <div class="nav-icons">
+                    <a href="#" class="nav-icon">
+                        <img src="./assets/img/data.png" alt="data">
+                    </a>
+                    <a href="#" class="nav-icon">
+                        <img src="./assets/img/massage.png" alt="message">
+                    </a>
+                    <a href="#" class="nav-icon">
+                        <img src="./assets/img/Setting.png" alt="settings">
+                    </a>
+                    <a href="#" class="nav-icon">
+                        <img src="./assets/img/profile.png" alt="profile">
+                    </a>
+                </div>
+                <div class="header-btn">
+                    Додати запис
+                </div>
+            </div>
+            
+        </div>
             </div>
         </header>
 
@@ -463,7 +488,6 @@
                 </div> -->
                 <div class="cards-block">
                     <div class="card-grid">
-                        <!-- Картка (повторити скільки потрібно) -->
                         <div class="card">
                         <img src="./assets/img/servicesM.png" class="card-img" alt="Масаж">
                         <div class="card-body">
@@ -665,44 +689,84 @@
                         </div>
                         </div>
                         <div class="card">
-                        <img src="./assets/img/servicesM.png" class="card-img" alt="Масаж">
-                        <div class="card-body">
-                            <h5 class="card-title">Загальний масаж</h5>
-                            <p class="card-text">
-                            Стрижемо вуса та бороду а та бородуа та бороду..
-                            </p>
-                            <div class="card-info">
-                            <span class="time">
-                                <img src="./assets/img/Time Circle 3.png">
-                                40 хв.
-                            </span>
-                            <span class="price">1759 ₴</span>
+                            <img src="./assets/img/servicesM.png" class="card-img" alt="Масаж">
+                            <div class="card-body">
+                                <h5 class="card-title">Загальний масаж</h5>
+                                <p class="card-text">
+                                Стрижемо вуса та бороду а та бородуа та бороду..
+                                </p>
+                                <div class="card-info">
+                                <span class="time">
+                                    <img src="./assets/img/Time Circle 3.png">
+                                    40 хв.
+                                </span>
+                                <span class="price">1759 ₴</span>
+                                </div>
+                                <div class="card-reviews">
+                                <img src="./assets/img/😐 3.3.png" alt="star">
+                                <span>255 відгуків</span>
+                                </div>
                             </div>
-                            <div class="card-reviews">
-                            <img src="./assets/img/😐 3.3.png" alt="star">
-                            <span>255 відгуків</span>
-                            </div>
-                        </div>
                         </div>
                         <div class="card">
-                        <img src="./assets/img/servicesM.png" class="card-img" alt="Масаж">
-                        <div class="card-body">
-                            <h5 class="card-title">Загальний масаж</h5>
-                            <p class="card-text">
-                            Стрижемо вуса та бороду а та бородуа та бороду..
-                            </p>
-                            <div class="card-info">
-                            <span class="time">
-                                <img src="./assets/img/Time Circle 3.png">
-                                40 хв.
-                            </span>
-                            <span class="price">1759 ₴</span>
-                            </div>
-                            <div class="card-reviews">
-                            <img src="./assets/img/😐 3.3.png" alt="star">
-                            <span>255 відгуків</span>
+                            <img src="./assets/img/servicesM.png" class="card-img" alt="Масаж">
+                            <div class="card-body">
+                                <h5 class="card-title">Загальний масаж</h5>
+                                <p class="card-text">
+                                Стрижемо вуса та бороду а та бородуа та бороду..
+                                </p>
+                                <div class="card-info">
+                                <span class="time">
+                                    <img src="./assets/img/Time Circle 3.png">
+                                    40 хв.
+                                </span>
+                                <span class="price">1759 ₴</span>
+                                </div>
+                                <div class="card-reviews">
+                                <img src="./assets/img/😐 3.3.png" alt="star">
+                                <span>255 відгуків</span>
+                                </div>
                             </div>
                         </div>
+                        <div class="card">
+                            <img src="./assets/img/servicesM.png" class="card-img" alt="Масаж">
+                            <div class="card-body">
+                                <h5 class="card-title">Загальний масаж</h5>
+                                <p class="card-text">
+                                Стрижемо вуса та бороду а та бородуа та бороду..
+                                </p>
+                                <div class="card-info">
+                                <span class="time">
+                                    <img src="./assets/img/Time Circle 3.png">
+                                    40 хв.
+                                </span>
+                                <span class="price">1759 ₴</span>
+                                </div>
+                                <div class="card-reviews">
+                                <img src="./assets/img/😐 3.3.png" alt="star">
+                                <span>255 відгуків</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/img/servicesM.png" class="card-img" alt="Масаж">
+                            <div class="card-body">
+                                <h5 class="card-title">Загальний масаж</h5>
+                                <p class="card-text">
+                                Стрижемо вуса та бороду а та бородуа та бороду..
+                                </p>
+                                <div class="card-info">
+                                <span class="time">
+                                    <img src="./assets/img/Time Circle 3.png">
+                                    40 хв.
+                                </span>
+                                <span class="price">1759 ₴</span>
+                                </div>
+                                <div class="card-reviews">
+                                <img src="./assets/img/😐 3.3.png" alt="star">
+                                <span>255 відгуків</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="more-services">

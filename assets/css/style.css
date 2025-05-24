@@ -197,6 +197,7 @@ span {
     gap: 10px;
     align-items: end;
     margin-left: auto;
+    padding-right: 135px;
 }
 
 .master-actions .master-actions__btn {
@@ -1235,7 +1236,7 @@ ol {
 
     ol.breadcrumb {
         position: relative;
-        top: -36px;
+        top: -30px;
         left: 0;
         right: 0;
         z-index: 999;
