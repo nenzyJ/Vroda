@@ -447,6 +447,10 @@ span {
 
 .about-left h4 {
     margin-top: 16px;
+    @media(max-width: 768px) {
+        margin-top: 8px;
+        
+    }
 }
 
 .about-right {
@@ -549,6 +553,10 @@ span {
     font-size: 32px;
     font-weight: 600;
     font-family: Raleway;
+    @media(max-width: 768px) {
+        font-size: 20px;
+        
+    }
 }
 
 .tabs-container {
@@ -558,6 +566,9 @@ span {
     margin-bottom: 20px;
     gap: 32px;
     padding: 0 0 12px 0;
+    @media(max-width: 768px) {
+        
+    }
 }
 
 .tab {
@@ -570,10 +581,19 @@ span {
     position: relative;
     transition: all 0.3s ease;
     background-color: transparent;
+    @media(max-width: 768px) {
+
+        
+        
+    }
 }
 
 .tab.active {
     color: #000000;
+    @media(max-width: 768px) {
+
+        
+    }
 }
 
 .tab.active:after {
@@ -606,6 +626,14 @@ span {
     margin-bottom: 8px;
     position: absolute;
     margin: 10px;
+    @media(max-width: 768px) {
+        font-size: 12px;
+        padding: 7px 8px 10px 8px;
+        min-width: 28px;
+        min-height: 20px;
+        margin-top: 0;
+        
+    }
 }
 
 .add-service-btn {

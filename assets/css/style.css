@@ -584,6 +584,10 @@ span {
     font-size: 32px;
     font-weight: 600;
     font-family: Raleway;
+    @media(max-width: 768px) {
+        font-size: 20px;
+        
+    }
 }
 
 .tabs-container {
@@ -625,7 +629,7 @@ span {
 }
 
 .add-service-btn {
-    display: flex;
+    /* display: flex;
     min-width: 44px;
     height: 34px;
     padding: 0px 6px;
@@ -640,6 +644,10 @@ span {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-bottom: 8px;
+    @media(max-width: 768px) {
+        min-width: 28px;
+        min-height: 20px;
+    } */
    
 }
 
@@ -659,6 +667,14 @@ span {
     margin-bottom: 8px;
     position: absolute;
     margin: 10px;
+    @media(max-width: 768px) {
+        margin-top: 0;
+        font-size: 12px;
+        min-width: 28px;
+        min-height: 20px;
+        padding: 7px 4px 0px 8px;
+        
+    }
     
 }
 
@@ -687,12 +703,12 @@ span {
     }
     
     .about {
-        padding: 15px 0;
+        /* padding: 15px 0; */
     }
     
     .about-content {
-        flex-direction: column;
-        gap: 20px;
+        /* flex-direction: column;
+        gap: 20px; */
     }
     
     .tabs-container {
@@ -1599,9 +1615,11 @@ video {
     .about-location{
         font-size: 14px;
     }
-    .about-content{
+    .about-left h4{
+        margin-top: 8px;
         
     }
+
 }
 
 .avatar-group {
