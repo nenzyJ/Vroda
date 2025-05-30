@@ -39,10 +39,26 @@ body {
 
 .container {
     box-sizing: border-box;
-    max-width: 1200px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 176px;
     /*height: auto; */
+}
+
+#main__container{
+    @media(max-width:1920px) {
+        max-width: 90%;
+        margin-left: ;
+    }
+}
+#main__about{
+
+}
+
+.container__reviews{
+    @media(max-width:1920px) {
+        max-width: 100%;
+}
 }
 
 a {
@@ -462,7 +478,7 @@ span {
 
 
 .container {
-    max-width: 1200px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 176px;
 }
@@ -628,28 +644,6 @@ span {
     color: #333;
 }
 
-.add-service-btn {
-    /* display: flex;
-    min-width: 44px;
-    height: 34px;
-    padding: 0px 6px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 16px;
-    background: #ED4457;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 8px;
-    @media(max-width: 768px) {
-        min-width: 28px;
-        min-height: 20px;
-    } */
-   
-}
 
 .tabs-container .number-massage{
     min-width: 44px;
@@ -682,7 +676,7 @@ span {
     background: #d63a4c;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1920px) {
     .container,
     .container-fluid {
         padding: 0 120px;
@@ -1340,6 +1334,22 @@ ol {
 .location-section {
     margin-top: 60px;
     padding: 20px 0;
+    @media(max-width: 1920px){
+        max-width:100%;
+    }
+
+    @media (max-width: 768px) {
+        
+        
+    }
+}
+
+.container__location{
+    padding: 85px;
+    @media (max-width: 768px) {
+        padding: 32px;
+        
+    }
 }
 
 .location-title {

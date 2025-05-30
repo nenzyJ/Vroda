@@ -416,6 +416,12 @@ span {
 
 /* about */
 
+#container__main{
+    @media(max-width:1920px) {
+        max-width: 90%;
+        margin-left: ;
+    }
+}
 
 .about {
     display: flex;
@@ -879,7 +885,17 @@ span {
 
 /* Location */
 
-.container {
+.container__location {
+    padding: 100px;
+     @media(max-width:1920px) {
+        max-width: 100%;
+        margin-left: ;
+    }
+
+    @media (max-width: 768px) {
+        padding: 32px;
+        
+    }
 
 }
 
@@ -1561,6 +1577,7 @@ video {
 
 
 .cards-block {
+    
   margin-top: 2rem;
   @media(max-width: 768px) {
     display: none;
